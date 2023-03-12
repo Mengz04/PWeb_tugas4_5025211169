@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="window-container">
+            <h3>LOGIN</h3>
+            <form onsubmit="submit_form()">
+                <p>Username:</p>
+                <input type="text" id="username" name="username" placeholder="Enter your email id">
+                <p>Password:</p>
+                <input type="text" id="password" name="password" placeholder="Enter your password">
+                <div class="button-holder">
+                    <input type="submit" value="Login"> <br>
+                </div>
+                <div class="button-holder">
+                <input type="button" value="SignUp" onclick="create()"> 
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function submit_form(){
+            alert("Login successfully");
+        }
+        function create(){
+            window.location= "signal.html"
+        }
+    </script>
+</body>
+</html>
